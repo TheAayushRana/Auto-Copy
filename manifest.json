@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Copy",
+    "description": "Copy Text Automatically before loosing",
+    "version": "1.0",
+    "permissions": ["storage", "activeTab"],
+    "content_scripts": [
+      {
+        "js": ["scripts/content-scripts.js"],
+        "matches": ["https://twitter.com/*"]
+      }
+    ],
+    "action": {
+      "default_icon": "assets/icon.png"
+    }
+}
+  
